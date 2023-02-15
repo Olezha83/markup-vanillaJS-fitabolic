@@ -1,0 +1,10 @@
+@mixin reference-goods($flex-basis, $height) {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: $flex-basis + px;
+  height: $height + px;
+  border: 1px solid #838282;
+  background: #666;
+  box-shadow: 0 0 3px #000000bf;
+}

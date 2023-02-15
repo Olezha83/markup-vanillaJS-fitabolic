@@ -1,0 +1,17 @@
+@mixin absolute-elem-WH ($width, $height) {
+  position: absolute;
+  width: $width + px;
+  height: $height + px;
+}
+
+@mixin absolute-elem-W ($width) {
+  position: absolute;
+  width: $width + px;
+}
+
+@mixin absolute-pseudo-elem-WH ($width, $height) {
+  content: '';
+  position: absolute;
+  width: $width + px;
+  height: $height + px;
+}

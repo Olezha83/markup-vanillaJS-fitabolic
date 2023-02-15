@@ -1,0 +1,5 @@
+@mixin tabs-positioning ($width, $height, $bgp-x) {
+  width: $width + px;
+  height: $height + px;
+  background-position-x: -$bgp-x + px;
+}

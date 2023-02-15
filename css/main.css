@@ -1,0 +1,1058 @@
+@charset "UTF-8";
+@import url(../css/reset.css);
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  background: url("../img/background-repetition.jpg") 0 26px;
+}
+
+.banner,
+.content,
+footer {
+  border: 10px solid;
+  border-radius: 10px;
+  -o-border-image: url(../img/border-image.png) 20 18/2 1.8 stretch repeat;
+     border-image: url(../img/border-image.png) 20 18/2 1.8 stretch repeat;
+  box-shadow: 0 0 4px #000, inset 0 0 4px #000;
+  background: #1d1d1d;
+}
+
+button,
+input,
+a {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.bold-txt {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 22px;
+  color: #3ec1f8;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: relative;
+  padding-bottom: 15px;
+}
+header .flex-container,
+header .basket,
+header nav {
+  z-index: 5;
+}
+header .flex-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0 386px 0 224px;
+}
+header .flex-container .inner-container ul {
+  font-size: 0;
+}
+header .flex-container .inner-container ul li {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: inline-block;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7490196078);
+  cursor: pointer;
+  background: linear-gradient(#484848, #353535);
+  text-align: center;
+  width: 123px;
+  padding: 4px 0 7px;
+}
+header .flex-container .inner-container ul li:not(:first-child) {
+  margin-left: 4px;
+}
+header .flex-container .inner-container .phone {
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 43px 0 51px -1px;
+}
+header .flex-container .inner-container .phone::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 41px;
+  bottom: -2px;
+  left: -52px;
+  background: url("../img/sprite.png") -276px -214px;
+}
+header .flex-container .search {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7490196078);
+  background: linear-gradient(#484848, #353535);
+}
+header .flex-container .search input {
+  margin-left: 8px;
+  width: 182px;
+  height: 23px;
+  padding-left: 40px;
+  background: #606060;
+  border: 1px solid #969696;
+}
+header .flex-container .search button {
+  width: 106px;
+  height: 29px;
+  background: #ba9835;
+  font-weight: 700;
+  border: 1px solid #000;
+  margin: 6px 16px 5px 11px;
+  cursor: pointer;
+}
+header nav {
+  position: relative;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7490196078);
+  background: linear-gradient(#303030, #1e1e1e);
+  height: 40px;
+  margin: 5px 0 0 190px;
+}
+header nav ul {
+  margin: 0 17px 0 92px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul a {
+  display: block;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: transparent;
+  font-weight: 700;
+  padding: 11px 14px 20px 13px;
+  white-space: nowrap;
+}
+header nav ul a:hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7490196078);
+  background: linear-gradient(#bd9b36 75%, #a8892b);
+}
+header .basket {
+  position: absolute;
+  width: 67px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  top: 0;
+  right: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7490196078);
+  background: linear-gradient(#bd9b36 75%, #a8892b);
+  text-align: center;
+  font-size: 0;
+}
+header .basket a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 36px 12px 6px 12px;
+}
+header .basket::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: 6px;
+  left: 19px;
+  background: url("../img/sprite.png") -276px -255px;
+  pointer-events: none;
+}
+header .sportsman {
+  position: absolute;
+  width: 455px;
+  height: 214px;
+  top: 0;
+  right: 2px;
+  background: url("../img/sprite.png");
+}
+header .logo-bg {
+  position: absolute;
+  width: 276px;
+  height: 120px;
+  bottom: 0;
+  left: 0;
+  background: url("../img/sprite.png") 0 -214px;
+}
+header .logo {
+  position: absolute;
+  bottom: 7px;
+  left: 29px;
+}
+header .logo-bg,
+header .logo {
+  z-index: 10;
+}
+
+.banner-wrapper {
+  position: relative;
+}
+.banner-wrapper .banner {
+  position: relative;
+  margin-top: 31px;
+  overflow: hidden;
+}
+.banner-wrapper .banner #banner-flex-container {
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: left 0.5s ease-in-out;
+}
+.banner-wrapper .banner #banner-flex-container > a {
+  display: flex;
+  flex: 1 0 100%;
+  align-items: center;
+  height: 231px;
+  border-radius: 8px;
+  background: #000;
+}
+.banner-wrapper .banner #banner-flex-container .strongman,
+.banner-wrapper .banner #banner-flex-container .what-for,
+.banner-wrapper .banner #banner-flex-container .photo {
+  background: url(../img/sprite.png);
+}
+.banner-wrapper .banner #banner-flex-container .strongman {
+  margin-left: 95px;
+  width: 272px;
+  height: 100%;
+}
+.banner-wrapper .banner #banner-flex-container .what-for {
+  margin-left: 67px;
+  width: 244px;
+  height: 151px;
+}
+.banner-wrapper .banner #banner-flex-container .photo {
+  margin-left: 73px;
+  width: 106px;
+  height: 226px;
+}
+.banner-wrapper .banner #banner-flex-container .slide-1 .strongman {
+  background-position: 0 -334px;
+}
+.banner-wrapper .banner #banner-flex-container .slide-1 .what-for {
+  background-position: -272px -334px;
+}
+.banner-wrapper .banner #banner-flex-container .slide-1 .photo {
+  background-position: -516px -334px;
+}
+.banner-wrapper .banner #banner-flex-container .slide-2 .strongman {
+  background-position: 0 -565px;
+}
+.banner-wrapper .banner #banner-flex-container .slide-2 .what-for {
+  background-position: -272px -565px;
+}
+.banner-wrapper .banner #banner-flex-container .slide-2 .photo {
+  background-position: -516px -565px;
+}
+.banner-wrapper .banner #banner-flex-container .slide-3 .strongman {
+  background-position: 0 -796px;
+}
+.banner-wrapper .banner #banner-flex-container .slide-3 .what-for {
+  background-position: -272px -796px;
+}
+.banner-wrapper .banner #banner-flex-container .slide-3 .photo {
+  background-position: -516px -796px;
+}
+.banner-wrapper .banner #banner-flex-container .slide-4 .strongman {
+  background-position: 0 -1027px;
+}
+.banner-wrapper .banner #banner-flex-container .slide-4 .what-for {
+  background-position: -272px -1027px;
+}
+.banner-wrapper .banner #banner-flex-container .slide-4 .photo {
+  background-position: -516px -1027px;
+}
+.banner-wrapper .prev-button,
+.banner-wrapper .next-button {
+  position: absolute;
+  width: 23px;
+  height: 48px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.banner-wrapper .button-active {
+  background: #ba9835;
+}
+.banner-wrapper .button-muted {
+  background: #8b8b8b;
+}
+.banner-wrapper .prev-button::before,
+.banner-wrapper .next-button::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 16px;
+  border: 1px solid #fff;
+  border-right: none;
+  border-top: none;
+}
+.banner-wrapper .prev-button::before {
+  left: 8px;
+  transform: rotate(45deg);
+}
+.banner-wrapper .next-button::after {
+  right: 8px;
+  transform: rotate(225deg);
+}
+.banner-wrapper .prev-button,
+.banner-wrapper .next-button {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner-wrapper .prev-button {
+  left: -7px;
+}
+.banner-wrapper .next-button {
+  right: -8px;
+}
+
+.content {
+  margin-top: 66px;
+  padding: 29px 27px 18px 30px;
+}
+.content main .tabs {
+  position: relative;
+}
+.content main .tabs ul {
+  font-size: 0;
+  position: absolute;
+  top: -73px;
+  left: -2px;
+}
+.content main .tabs ul li {
+  position: relative;
+  display: inline-block;
+  height: 34px;
+  background-image: url(../img/sprite.png);
+  overflow: hidden;
+  pointer-events: none;
+}
+.content main .tabs ul li div {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  height: 100%;
+  transform: skewX(-33deg);
+  pointer-events: initial;
+}
+.content main .tabs ul li div span {
+  position: absolute;
+  top: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-shadow: 2px 2px 2px rgba(133, 107, 33, 0.7490196078), -2px -2px 2px rgba(133, 107, 33, 0.7490196078), 2px -2px 2px rgba(133, 107, 33, 0.7490196078), -2px 2px 2px rgba(133, 107, 33, 0.7490196078);
+}
+.content main .tabs ul .first-tab {
+  width: 278px;
+  background-position: -316px -214px;
+  z-index: 15;
+}
+.content main .tabs ul .first-tab div {
+  width: 96%;
+  transform: skewX(-33deg);
+}
+.content main .tabs ul .first-tab div span {
+  left: 31px;
+  transform: skewX(33deg);
+}
+.content main .tabs ul .second-tab {
+  width: 268px;
+  background-position: -316px -248px;
+  margin-left: -34px;
+  z-index: 10;
+}
+.content main .tabs ul .second-tab div {
+  width: 96%;
+  transform: skewX(-33deg);
+}
+.content main .tabs ul .second-tab div span {
+  left: 82px;
+  transform: skewX(33deg);
+}
+.content main .tabs ul .third-tab {
+  width: 268px;
+  background-position: -316px -282px;
+  margin-left: -48px;
+  z-index: 5;
+}
+.content main .tabs ul .third-tab div {
+  width: 100%;
+  transform: none;
+}
+.content main .tabs ul .third-tab div span {
+  left: 86px;
+}
+.content main .tabs #cancel-tab {
+  display: none;
+  position: absolute;
+  top: -61px;
+  right: -2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.content main .tabs .tabs-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 16px;
+}
+.content main .tabs .tabs-content .fat-burners .pic,
+.content main .tabs .tabs-content .kreatine .pic,
+.content main .tabs .tabs-content .l-carnitine .pic,
+.content main .tabs .tabs-content .joints-ligaments .pic,
+.content main .tabs .tabs-content .health-immunity .pic,
+.content main .tabs .tabs-content .sport-clothes .pic {
+  background-position-y: -145px;
+}
+.content main .tabs .tabs-content .sticks .pic,
+.content main .tabs .tabs-content .vitamins .pic,
+.content main .tabs .tabs-content .testosterone .pic,
+.content main .tabs .tabs-content .accessories .pic,
+.content main .tabs .tabs-content .launch-boxes .pic,
+.content main .tabs .tabs-content .discounts .pic {
+  background-position-y: -285px;
+}
+.content main .tabs .tabs-content a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 136px;
+  height: 136px;
+  border: 1px solid #838282;
+  background: #666;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.7490196078);
+  transition: opacity 0.7s ease-in-out;
+}
+.content main .tabs .tabs-content a .background {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  background-image: radial-gradient(#9a9a9a, #f6f6f6);
+  overflow: hidden;
+}
+.content main .tabs .tabs-content a .background .pic {
+  background-image: url(../img/tabs-sprite.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.content main .tabs .tabs-content a .background div[class|=name] {
+  position: absolute;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  font-size: 25px;
+  font-weight: 700;
+  color: transparent;
+  letter-spacing: -1.2px;
+  text-align: center;
+}
+.content main .tabs .tabs-content a .background div[class|=name] .outer-text {
+  position: relative;
+  background: linear-gradient(45deg, #000, #333);
+  -webkit-text-stroke: 6px transparent;
+  text-shadow: 0 0 10px #000, 2px 2px 2px #000, -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.content main .tabs .tabs-content a .background div[class|=name] .outer-text .inner-text {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  background: linear-gradient(45deg, #9d7c1b 25%, #bf9f3f 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: initial;
+  text-shadow: initial;
+}
+.content main .tabs .tabs-content .aminoacids .pic {
+  width: 94px;
+  height: 123px;
+  transform: translate(-50%, calc(-50% - 1px));
+}
+.content main .tabs .tabs-content .aminoacids .name {
+  width: 133px;
+  bottom: 5px;
+  left: 19px;
+}
+.content main .tabs .tabs-content .gainers .pic {
+  width: 87px;
+  height: 133px;
+  background-position-x: -94px;
+  transform: translate(calc(-50% - 1px), calc(-50% - 2px));
+}
+.content main .tabs .tabs-content .gainers .name {
+  width: 78px;
+  bottom: 6px;
+  left: 21px;
+}
+.content main .tabs .tabs-content .proteins .pic {
+  width: 93px;
+  height: 129px;
+  background-position-x: -181px;
+  transform: translate(-50%, calc(-50% - 1px));
+}
+.content main .tabs .tabs-content .proteins .name {
+  width: 91px;
+  bottom: 4px;
+  left: 20px;
+}
+.content main .tabs .tabs-content .spec-preps .pic {
+  width: 91px;
+  height: 131px;
+  background-position-x: -274px;
+  transform: translate(calc(-50% + 1px), calc(-50% - 1px));
+}
+.content main .tabs .tabs-content .spec-preps .name-1 {
+  width: 122px;
+  bottom: 10px;
+  left: 25px;
+}
+.content main .tabs .tabs-content .spec-preps .name-2 {
+  width: 98px;
+  bottom: 2px;
+  left: 44px;
+}
+.content main .tabs .tabs-content .sport-drinks .pic {
+  width: 75px;
+  height: 145px;
+  background-position-x: -365px;
+  transform: translate(calc(-50% - 1px), calc(-50% - 2px));
+}
+.content main .tabs .tabs-content .sport-drinks .name-1 {
+  width: 109px;
+  bottom: 9px;
+  left: 26px;
+}
+.content main .tabs .tabs-content .sport-drinks .name-2 {
+  width: 73px;
+  bottom: 7px;
+  left: 49px;
+}
+.content main .tabs .tabs-content .energy-drinks .pic {
+  width: 87px;
+  height: 132px;
+  background-position-x: -440px;
+  transform: translate(-50%, calc(-50% - 2px));
+}
+.content main .tabs .tabs-content .energy-drinks .name {
+  width: 101px;
+  bottom: 10px;
+  left: 27px;
+}
+.content main .tabs .tabs-content .fat-burners .pic {
+  width: 75px;
+  height: 140px;
+  transform: translate(-50%, calc(-50% - 2px));
+}
+.content main .tabs .tabs-content .fat-burners .name {
+  width: 139px;
+  bottom: 6px;
+  left: 20px;
+}
+.content main .tabs .tabs-content .kreatine .pic {
+  width: 91px;
+  height: 122px;
+  background-position-x: -75px;
+  transform: translate(calc(-50% - 1px), -50%);
+}
+.content main .tabs .tabs-content .kreatine .name {
+  width: 77px;
+  bottom: 4px;
+  left: 21px;
+}
+.content main .tabs .tabs-content .l-carnitine .pic {
+  width: 82px;
+  height: 132px;
+  background-position-x: -166px;
+  transform: translate(calc(-50% + 2px), calc(-50% - 2px));
+}
+.content main .tabs .tabs-content .l-carnitine .name {
+  width: 96px;
+  bottom: 6px;
+  left: 20px;
+}
+.content main .tabs .tabs-content .joints-ligaments .pic {
+  width: 86px;
+  height: 136px;
+  background-position-x: -248px;
+  transform: translate(-50%, -50%);
+}
+.content main .tabs .tabs-content .joints-ligaments .name-1 {
+  width: 114px;
+  bottom: 12px;
+  left: 26px;
+}
+.content main .tabs .tabs-content .joints-ligaments .name-2 {
+  width: 76px;
+  bottom: 12px;
+  left: 51px;
+}
+.content main .tabs .tabs-content .health-immunity .pic {
+  width: 101px;
+  height: 127px;
+  background-position-x: -334px;
+  transform: translate(calc(-50% - 1px), calc(-50% - 1px));
+}
+.content main .tabs .tabs-content .health-immunity .name-1 {
+  width: 101px;
+  bottom: 20px;
+  left: 29px;
+}
+.content main .tabs .tabs-content .health-immunity .name-2 {
+  width: 97px;
+  bottom: 12px;
+  left: 45px;
+}
+.content main .tabs .tabs-content .sport-clothes .pic {
+  width: 136px;
+  height: 130px;
+  background-position-x: -435px;
+  transform: translate(calc(-50% + 5px), calc(-50% - 3px));
+}
+.content main .tabs .tabs-content .sport-clothes .name-1 {
+  width: 104px;
+  bottom: 9px;
+  left: 25px;
+}
+.content main .tabs .tabs-content .sport-clothes .name-2 {
+  width: 76px;
+  bottom: 7px;
+  left: 52px;
+}
+.content main .tabs .tabs-content .sticks .pic {
+  width: 134px;
+  height: 118px;
+  transform: translate(calc(-50% - 1px), calc(-50% - 2px));
+}
+.content main .tabs .tabs-content .sticks .name {
+  width: 95px;
+  bottom: 5px;
+  left: 20px;
+}
+.content main .tabs .tabs-content .vitamins .pic {
+  width: 75px;
+  height: 138px;
+  background-position-x: -134px;
+  transform: translate(calc(-50% - 2px), calc(-50% - 2px));
+}
+.content main .tabs .tabs-content .vitamins .name-1 {
+  width: 106px;
+  bottom: 16px;
+  left: 26px;
+}
+.content main .tabs .tabs-content .vitamins .name-2 {
+  width: 93px;
+  bottom: 7px;
+  left: 44px;
+}
+.content main .tabs .tabs-content .testosterone .pic {
+  width: 81px;
+  height: 135px;
+  background-position-x: -209px;
+  transform: translate(calc(-50% + 3px), calc(-50% - 1px));
+}
+.content main .tabs .tabs-content .testosterone .name-1 {
+  width: 106px;
+  bottom: 22px;
+  left: 26px;
+}
+.content main .tabs .tabs-content .testosterone .name-2 {
+  width: 118px;
+  bottom: 6px;
+  left: 37px;
+}
+.content main .tabs .tabs-content .accessories .pic {
+  width: 139px;
+  height: 121px;
+  background-position-x: -290px;
+  transform: translate(calc(-50% - 1px), calc(-50% - 2px));
+}
+.content main .tabs .tabs-content .accessories .name-1 {
+  width: 109px;
+  bottom: 14px;
+  left: 29px;
+}
+.content main .tabs .tabs-content .accessories .name-2 {
+  width: 102px;
+  bottom: 3px;
+  left: 45px;
+}
+.content main .tabs .tabs-content .launch-boxes .pic {
+  width: 102px;
+  height: 143px;
+  background-position-x: -429px;
+  transform: translate(calc(-50% + 1px), calc(-50% - 2px));
+}
+.content main .tabs .tabs-content .launch-boxes .name-1 {
+  width: 119px;
+  bottom: 14px;
+  left: 26px;
+}
+.content main .tabs .tabs-content .launch-boxes .name-2 {
+  width: 84px;
+  bottom: 12px;
+  left: 52px;
+}
+.content main .tabs .tabs-content .discounts .pic {
+  width: 133px;
+  height: 128px;
+  background-position-x: -531px;
+  transform: translate(calc(-50% + 2px), calc(-50% - 1px));
+}
+.content main .tabs .tabs-content .discounts .name {
+  width: 67px;
+  bottom: 62px;
+  left: 22px;
+}
+.content main .hits h2,
+.content main .new h2 {
+  margin: 29px 0 13px 2px;
+}
+.content main .hits .container,
+.content main .new .container {
+  position: relative;
+  border: 1px solid #666;
+  outline: 1px solid #000;
+  background: #333;
+  padding: 26px 30px 22px 31px;
+}
+.content main .hits .container .prev-button,
+.content main .hits .container .next-button,
+.content main .new .container .prev-button,
+.content main .new .container .next-button {
+  position: absolute;
+  width: 23px;
+  height: 48px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.content main .hits .container .button-active,
+.content main .new .container .button-active {
+  background: #ba9835;
+}
+.content main .hits .container .button-muted,
+.content main .new .container .button-muted {
+  background: #8b8b8b;
+}
+.content main .hits .container .prev-button::before,
+.content main .hits .container .next-button::after,
+.content main .new .container .prev-button::before,
+.content main .new .container .next-button::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 16px;
+  border: 1px solid #fff;
+  border-right: none;
+  border-top: none;
+}
+.content main .hits .container .prev-button::before,
+.content main .new .container .prev-button::before {
+  left: 8px;
+  transform: rotate(45deg);
+}
+.content main .hits .container .next-button::after,
+.content main .new .container .next-button::after {
+  right: 8px;
+  transform: rotate(225deg);
+}
+.content main .hits .container .prev-button,
+.content main .hits .container .next-button,
+.content main .new .container .prev-button,
+.content main .new .container .next-button {
+  top: 62px;
+}
+.content main .hits .container .prev-button,
+.content main .new .container .prev-button {
+  left: -13px;
+}
+.content main .hits .container .next-button,
+.content main .new .container .next-button {
+  right: -14px;
+}
+.content main .hits .container .wrapper-overflow,
+.content main .new .container .wrapper-overflow {
+  overflow: hidden;
+}
+.content main .hits .container .wrapper-overflow .flex-container,
+.content main .new .container .wrapper-overflow .flex-container {
+  display: flex;
+  -moz-column-gap: 28px;
+       column-gap: 28px;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item],
+.content main .new .container .wrapper-overflow .flex-container [class^=item] {
+  position: relative;
+  height: 328px;
+  display: flex;
+  flex: 0 0 189px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] a,
+.content main .new .container .wrapper-overflow .flex-container [class^=item] a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 189px;
+  height: 128px;
+  border: 1px solid #838282;
+  background: #666;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.7490196078);
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] a .background,
+.content main .new .container .wrapper-overflow .flex-container [class^=item] a .background {
+  position: relative;
+  width: 179px;
+  height: 120px;
+  background-image: radial-gradient(#737373, #d8d8d8);
+  overflow: hidden;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] a .background img,
+.content main .new .container .wrapper-overflow .flex-container [class^=item] a .background img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] a .background [src*=bcaa],
+.content main .new .container .wrapper-overflow .flex-container [class^=item] a .background [src*=bcaa] {
+  top: -15px;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] a .background [src*=amino],
+.content main .new .container .wrapper-overflow .flex-container [class^=item] a .background [src*=amino] {
+  top: -13px;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] a .background [src*=aakg],
+.content main .new .container .wrapper-overflow .flex-container [class^=item] a .background [src*=aakg] {
+  top: -11px;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] a .background [src*=antioxidant],
+.content main .new .container .wrapper-overflow .flex-container [class^=item] a .background [src*=antioxidant] {
+  top: -18px;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] h3,
+.content main .new .container .wrapper-overflow .flex-container [class^=item] h3 {
+  font-size: 18px;
+  color: #dbdb13;
+  margin: 9px 0 4px;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] .description,
+.content main .new .container .wrapper-overflow .flex-container [class^=item] .description {
+  line-height: 1.2;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] .order,
+.content main .new .container .wrapper-overflow .flex-container [class^=item] .order {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #ba9835;
+  row-gap: 17px;
+  align-items: center;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] .order [class$=quantity],
+.content main .new .container .wrapper-overflow .flex-container [class^=item] .order [class$=quantity] {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] .order [class$=quantity] input,
+.content main .new .container .wrapper-overflow .flex-container [class^=item] .order [class$=quantity] input {
+  width: 37px;
+  height: 19px;
+  color: #000;
+  font-size: 17px;
+  border: 1px solid #969696;
+  text-align: right;
+  padding-right: 6px;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] .order [class$=quantity] span,
+.content main .new .container .wrapper-overflow .flex-container [class^=item] .order [class$=quantity] span {
+  color: #969696;
+  font-size: initial;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] .order [class$=quantity] select,
+.content main .new .container .wrapper-overflow .flex-container [class^=item] .order [class$=quantity] select {
+  width: 65px;
+  border: 1px solid #969696;
+  padding: 1px;
+  font-size: 16px;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] .order .price,
+.content main .new .container .wrapper-overflow .flex-container [class^=item] .order .price {
+  font-weight: 700;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] .order .price .number,
+.content main .new .container .wrapper-overflow .flex-container [class^=item] .order .price .number {
+  font-size: 20px;
+}
+.content main .hits .container .wrapper-overflow .flex-container [class^=item] .order button,
+.content main .new .container .wrapper-overflow .flex-container [class^=item] .order button {
+  width: 104px;
+  height: 29px;
+  background: url(../img/sprite.png) -518px 0;
+  border: none;
+  padding: 0;
+  color: #c39b25;
+}
+.content .articles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 46px;
+}
+.content .articles .article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 159px;
+  max-height: 600px;
+  line-height: 1.2;
+}
+.content .articles .article img {
+  border: 6px solid #333;
+  outline: 1px solid #fbfbfb;
+  outline-offset: -6px;
+}
+.content .articles .article .date {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3ec1f8;
+  margin-top: 12px;
+}
+.content .articles .article .name {
+  color: #bf9f3f;
+  margin-top: 2px;
+}
+.content .articles .article .text {
+  margin-top: 2px;
+  color: #a9a9a9;
+}
+.content .articles .article .text::after {
+  content: "…";
+  margin-left: -2px;
+}
+.content .articles .article .read-more {
+  cursor: pointer;
+  color: #dbdb13;
+  margin-top: 4px;
+}
+.content .subscribe-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 39px;
+  color: #a9a9a9;
+}
+.content .subscribe-info .subscription {
+  width: 219px;
+}
+.content .subscribe-info .subscription form {
+  margin-top: 16px;
+}
+.content .subscribe-info .subscription form label {
+  line-height: 1.2;
+}
+.content .subscribe-info .subscription form .inp-wrap {
+  margin-top: 18px;
+}
+.content .subscribe-info .subscription form .inp-wrap input {
+  width: 100%;
+  height: 29px;
+  box-sizing: border-box;
+  border: 1px solid #a9a9a9;
+  color: #1d1d1d;
+}
+.content .subscribe-info .subscription form .btn-wrap {
+  text-align: right;
+  margin-top: 23px;
+}
+.content .subscribe-info .subscription form .btn-wrap button {
+  width: 104px;
+  height: 29px;
+  background: url(../img/sprite.png) -518px 0;
+  border: none;
+  padding: 0;
+  color: #c39b25;
+}
+.content .subscribe-info .information {
+  width: 633px;
+  line-height: 1.2;
+  color: #a9a9a9;
+}
+.content .subscribe-info .information a {
+  color: #dbdb13;
+}
+
+footer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 30px 0 42px;
+  padding: 7px 29px 6px;
+  color: #a9a9a9;
+}
+footer p {
+  margin-right: 152px;
+  padding-bottom: 4px;
+}
+footer .bold-txt {
+  color: #fff;
+}
+footer .refs {
+  display: inline-flex;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+}
+footer .refs a {
+  display: block;
+  width: 37px;
+  height: 37px;
+  background: url(../img/sprite.png);
+  background-position-y: -500px;
+}
+footer .refs .ref_1 {
+  background-position-x: -280px;
+}
+footer .refs .ref_2 {
+  background-position-x: -317px;
+}
+footer .refs .ref_3 {
+  background-position-x: -354px;
+}
+footer .refs .ref_4 {
+  background-position-x: -391px;
+}
+footer .refs .ref_5 {
+  background-position-x: -428px;
+}
+footer .refs .ref_6 {
+  background-position-x: -465px;
+}/*# sourceMappingURL=main.css.map */

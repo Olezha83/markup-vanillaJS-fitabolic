@@ -1,0 +1,24 @@
+@mixin pos-TL($top, $left) {
+  top: $top + px;
+  left: $left + px;
+}
+
+@mixin pos-TR($top, $right) {
+  top: $top + px;
+  right: $right + px;
+}
+
+@mixin pos-BL($bottom, $left) {
+  bottom: $bottom + px;
+  left: $left + px;
+}
+
+@mixin pos-TR0 {
+  top: 0;
+  right: 0;
+}
+
+@mixin pos-BL0 {
+  bottom: 0;
+  left: 0;
+}
