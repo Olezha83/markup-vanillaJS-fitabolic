@@ -892,10 +892,12 @@ header {
                   }
 
                   select {
+                    appearance: none;
                     width: 65px;
                     border: 1px solid $gray_2;
-                    padding: 1px;
+                    padding: 0 0 2px 6px;
                     font-size: 16px;
+                    background: #fff url(../img/sprite.png) -350px -745px;
                   }
                 }
 

@@ -903,10 +903,14 @@ header .logo {
 }
 .content main .hits .container .wrapper-overflow .flex-container [class^=item] .order [class$=quantity] select,
 .content main .new .container .wrapper-overflow .flex-container [class^=item] .order [class$=quantity] select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 65px;
   border: 1px solid #969696;
-  padding: 1px;
+  padding: 0 0 2px 6px;
   font-size: 16px;
+  background: #fff url(../img/sprite.png) -350px -745px;
 }
 .content main .hits .container .wrapper-overflow .flex-container [class^=item] .order .price,
 .content main .new .container .wrapper-overflow .flex-container [class^=item] .order .price {
