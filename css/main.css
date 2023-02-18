@@ -806,9 +806,12 @@ header .logo {
 }
 .content main .hits .container .wrapper-overflow .flex-container,
 .content main .new .container .wrapper-overflow .flex-container {
+  position: relative;
+  left: 0;
   display: flex;
   -moz-column-gap: 28px;
        column-gap: 28px;
+  transition: left 0.5s ease-out;
 }
 .content main .hits .container .wrapper-overflow .flex-container [class^=item],
 .content main .new .container .wrapper-overflow .flex-container [class^=item] {
@@ -843,6 +846,10 @@ header .logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .content main .hits .container .wrapper-overflow .flex-container [class^=item] a .background [src*=bcaa],
 .content main .new .container .wrapper-overflow .flex-container [class^=item] a .background [src*=bcaa] {

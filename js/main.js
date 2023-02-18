@@ -244,3 +244,84 @@ selects.forEach((item) => {
       itemQuantityPriceRatio[event.target.value] * inputs[position].value
   }
 })
+
+// HITS AND NEW CAROUSELS
+
+const hitsNextBtn = document.getElementById('next-btn-hits')
+const hitsPrevBtn = document.getElementById('prev-btn-hits')
+const newNextBtn = document.getElementById('next-btn-new')
+const newPrevBtn = document.getElementById('prev-btn-new')
+const containerHits = document.querySelector('.hits .flex-container')
+const containerNew = document.querySelector('.new .flex-container')
+const totalWidthHits = containerHits.scrollWidth
+const totalWidthNew = containerNew.scrollWidth
+const lastPositionHits = -(totalWidthHits - containerHits.offsetWidth)
+const lastPositionNew = -(totalWidthNew - containerNew.offsetWidth)
+const slidingDistance =
+  containerHits.children[0].offsetWidth +
+  parseInt(getComputedStyle(containerHits).columnGap)
+
+let currentPositionHits = 0
+let currentPositionNew = 0
+
+hitsNextBtn.addEventListener('click', function () {
+  if (currentPositionHits > lastPositionHits) {
+    hitsPrevBtn.classList.contains('button-muted') &&
+      hitsPrevBtn.classList.replace('button-muted', 'button-active')
+
+    currentPositionHits -= slidingDistance
+    Object.assign(containerHits.style, {
+      left: `${currentPositionHits}px`,
+    })
+  }
+
+  if (currentPositionHits === lastPositionHits) {
+    this.classList.replace('button-active', 'button-muted')
+  }
+})
+
+hitsPrevBtn.addEventListener('click', function () {
+  if (currentPositionHits < 0) {
+    hitsNextBtn.classList.contains('button-muted') &&
+      hitsNextBtn.classList.replace('button-muted', 'button-active')
+
+    currentPositionHits += slidingDistance
+    Object.assign(containerHits.style, {
+      left: `${currentPositionHits}px`,
+    })
+  }
+
+  currentPositionHits === 0 &&
+    this.classList.replace('button-active', 'button-muted')
+})
+
+newNextBtn.addEventListener('click', function () {
+  if (currentPositionNew > lastPositionNew) {
+    newPrevBtn.classList.contains('button-muted') &&
+      newPrevBtn.classList.replace('button-muted', 'button-active')
+
+    currentPositionNew -= slidingDistance
+    Object.assign(containerNew.style, {
+      left: `${currentPositionNew}px`,
+    })
+  }
+
+  if (currentPositionNew === lastPositionNew) {
+    this.classList.replace('button-active', 'button-muted')
+  }
+})
+
+newPrevBtn.addEventListener('click', function () {
+  if (currentPositionNew < 0) {
+    newNextBtn.classList.contains('button-muted') &&
+      newNextBtn.classList.replace('button-muted', 'button-active')
+
+    currentPositionNew += slidingDistance
+    Object.assign(containerNew.style, {
+      left: `${currentPositionNew}px`,
+    })
+  }
+
+  currentPositionNew === 0 &&
+    this.classList.replace('button-active', 'button-muted')
+})

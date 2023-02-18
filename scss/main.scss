@@ -808,8 +808,11 @@ header {
           overflow: hidden;
 
           .flex-container {
+            position: relative;
+            left: 0;
             display: flex;
             column-gap: 28px;
+            transition: left 0.5s ease-out;
 
             [class^='item'] {
               position: relative;
@@ -833,6 +836,7 @@ header {
                     position: absolute;
                     left: 50%;
                     transform: translateX(-50%);
+                    user-select: none;
                   }
 
                   [src*='bcaa'] {
